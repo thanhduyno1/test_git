@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+    </section>
+    <script>
+        const container = document.getElementById("container");
+        var div;
+        for (var i = 0; i < 5; i++) {
+            div = document.createElement("div");
+            div.onclick = function() {
+            alert("This is box #: " + i);
+        };
+        container.appendChild(div);
+        }
+    </script>
+</body>
+</html>
